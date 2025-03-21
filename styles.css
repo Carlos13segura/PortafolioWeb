@@ -1,0 +1,150 @@
+/* Custom CSS */
+
+/* General Styles */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Section Titles */
+.section-title {
+    margin-bottom: 3rem;
+    padding-bottom: 1rem;
+    position: relative;
+    text-align: center;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background-color: var(--bs-primary);
+    border-radius: 2px;
+}
+
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(to right, rgba(13, 110, 253, 0.1), rgba(13, 110, 253, 0.05));
+    padding: 6rem 0;
+    text-align: center;
+}
+
+.profile-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 2rem;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Scroll Down Animation */
+.scroll-down {
+    animation: bounce 1.8s infinite ease-in-out;
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-12px); }
+}
+
+/* Social Icons */
+.social-icon,
+.social-icon-light {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: all 0.3s ease-in-out;
+}
+
+.social-icon {
+    background-color: #f8f9fa;
+    color: #6c757d;
+}
+
+.social-icon:hover {
+    background-color: var(--bs-primary);
+    color: #fff;
+    transform: scale(1.1);
+}
+
+.social-icon-light {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+}
+
+.social-icon-light:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+/* Custom Badge */
+.badge.bg-primary.bg-opacity-10 {
+    color: var(--bs-primary);
+    font-weight: 500;
+}
+
+/* Scroll to Top Button */
+#scrollToTop {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: var(--bs-primary);
+    color: #fff;
+    font-size: 1.2rem;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+
+#scrollToTop.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(-10px);
+}
+
+#scrollToTop:hover {
+    background-color: var(--bs-dark);
+}
+
+/* Form Focus Styles */
+.form-control:focus {
+    border-color: var(--bs-primary);
+    box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.3);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 767.98px) {
+    .hero-section {
+        padding: 4rem 0;
+    }
+
+    .section-title {
+        margin-bottom: 2rem;
+    }
+
+    #scrollToTop {
+        width: 40px;
+        height: 40px;
+        font-size: 1rem;
+    }
+}
