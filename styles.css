@@ -148,3 +148,58 @@ body {
         font-size: 1rem;
     }
 }
+
+#skillsCarousel {
+    max-width: 500px;
+    margin: 0 auto;
+}
+.carousel-item i {
+    transition: transform 0.5s ease-in-out;
+}
+.carousel-item.active i {
+    transform: scale(1.2);
+}
+.carousel-control-prev, .carousel-control-next {
+    filter: invert(100%);
+}
+
+/* Colores para los iconos */
+.text-html { color: #E44D26; } /* HTML5 - Naranja */
+.text-css { color: #264DE4; } /* CSS3 - Azul */
+.text-js { color: #F7DF1E; } /* JavaScript - Amarillo */
+.text-bootstrap { color: #7952B3; } /* Bootstrap - Morado */
+.text-figma { color: #F24E1E; } /* Figma - Rojo/Naranja */
+.text-git { color: #F1502F; } /* Git - Rojo */
+.text-responsive { color: #00A8E8; } /* Responsive Design - Azul Claro */
+.text-github {color: #181717; } /* Negro de GitHub */
+.text-vscode {color: #007ACC} /* Azul de Visual Studio Code */
+
+/* Estilos de las tarjetas de servicio */
+.service-card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+
+.service-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 4px 15px rgba(255, 255, 255, 0.3);
+}
+
+/* Iconos de servicios */
+.service-icon {
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+/* Estilos de imágenes dentro de las tarjetas */
+.service-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+}
