@@ -3,9 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portafolio de Carlos Segura, Desarrollador Web">
+    <meta name="description" content="Portafolio de Carlos Segura, Desarrollador Web especializado en crear experiencias digitales atractivas y funcionales">
+    <meta name="keywords" content="desarrollador web, frontend, diseño web, HTML, CSS, JavaScript, Bootstrap, portafolio">
+    <meta name="author" content="Carlos Segura">
     <link rel="icon" type="image/png" href="logos--html-5.png">
-    <title>Mi Portafolio</title>
+    <title>Carlos Segura | Desarrollador Web</title>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Font Awesome -->
@@ -17,7 +19,16 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
         <div class="container">
-            <a class="navbar-brand fw-bold text-primary" href="#">Mi Portafolio</a>
+            <a class="navbar-brand fw-bold text-primary" href="#">Carlos Segura</a>
+            <div class="theme-switch-wrapper d-flex">
+                <label class="theme-switch" for="themeToggle">
+                    <input type="checkbox" id="themeToggle">
+                    <span class="slider">
+                        <i class="fas fa-sun sun"></i>
+                        <i class="fas fa-moon moon"></i>
+                    </span>
+                </label>
+            </div>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -48,7 +59,7 @@
         <div class="container text-center">
             <div class="mb-4">
                 <div class="profile-image mx-auto">
-                    <img src="Imagen.png" alt="Profile" class="img-fluid rounded-circle border border-4 border-white shadow">
+                    <img src="Imagen.png" alt="Carlos Segura" class="img-fluid rounded-circle border border-4 border-white shadow">
                 </div>
             </div>
             <h1 class="display-4 fw-bold mb-3">Hola, soy <span class="text-primary">Carlos Segura</span></h1>
@@ -57,7 +68,7 @@
                 <a href="#contact" class="btn btn-primary px-4 py-2">Contáctame</a>
                 <a href="#projects" class="btn btn-outline-primary px-4 py-2">Ver Proyectos</a>
             </div>
-            <a href="#about" class="scroll-down d-inline-block mt-5">
+            <a href="#about" class="scroll-down d-inline-block mt-5" aria-label="Desplazarse hacia abajo">
                 <i class="fas fa-chevron-down fa-2x text-muted"></i>
             </a>
         </div>
@@ -69,7 +80,7 @@
             <h2 class="text-center position-relative section-title mb-5">Sobre Mí</h2>
             <div class="row align-items-center">
                 <div class="col-md-6 mb-4 mb-md-0">
-                    <img src="https://www.arrobasolutions.com/wp-content/uploads/2021/11/lenguajes-de-programacion-web-1024x683-4.jpg" alt="About Me" class="img-fluid rounded shadow">
+                    <img src="https://www.arrobasolutions.com/wp-content/uploads/2021/11/lenguajes-de-programacion-web-1024x683-4.jpg" alt="Desarrollo web" class="img-fluid rounded shadow">
                 </div>
                 <div class="col-md-6">
                     <p class="text-muted mb-3">
@@ -79,16 +90,16 @@
                         Con experiencia en HTML, CSS, JavaScript y varios frameworks modernos, disfruto resolviendo problemas complejos y transformando ideas en realidades digitales.
                     </p>
                     <p class="text-muted mb-4">
-                        Cuando no estoy codificando, me gusta entrenar y Jugar fútbol. Creo que mantener un equilibrio entre el trabajo y la vida personal es clave para la creatividad y la productividad.
+                        Cuando no estoy codificando, me gusta entrenar y jugar fútbol. Creo que mantener un equilibrio entre el trabajo y la vida personal es clave para la creatividad y la productividad.
                     </p>
                     <div class="d-flex gap-3">
-                        <a href="https://github.com/Carlos13segura" class="social-icon">
+                        <a href="https://github.com/Carlos13segura" class="social-icon" aria-label="GitHub">
                             <i class="fab fa-github"></i>
                         </a>
-                        <a href="https://www.linkedin.com/in/carlos-segura-118760324/" class="social-icon">
+                        <a href="https://www.linkedin.com/in/carlos-segura-118760324/" class="social-icon" aria-label="LinkedIn">
                             <i class="fab fa-linkedin-in"></i>
                         </a>
-                        <a href="seguraflorescarlosmanuel24@gmail.com" class="social-icon">
+                        <a href="mailto:seguraflorescarlosmanuel24@gmail.com" class="social-icon" aria-label="Email">
                             <i class="fas fa-envelope"></i>
                         </a>
                     </div>
@@ -97,9 +108,13 @@
         </div>
     </section>
 
+    <!-- Skills Section -->
     <section id="skills" class="py-5 bg-light">
         <div class="container">
             <h2 class="text-center position-relative section-title mb-5">Mis Habilidades</h2>
+            
+            
+            <!-- Carousel de tecnologías -->
             <div id="skillsCarousel" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner text-center">
                     <div class="carousel-item active">
@@ -152,62 +167,70 @@
     </section>
     
     <!-- Services Section -->
-    <div class="container py-5">
-        <h2 class="text-center position-relative section-title mb-5">Algunos de mis servicios</h2>
-        <div class="row g-4">
-            <div class="col-md-4">
-                <div class="service-card">
-                    <i class="fab fa-html5 service-icon text-html"></i>
-                    <h5>Páginas Web</h5>
-                    <img src="https://www.doowebs.es/wp-content/uploads/2024/04/tendencias-diseno-modo-oscuro.jpg" alt="Páginas Web">
+    <section id="services" class="py-5">
+        <div class="container">
+            <h2 class="text-center position-relative section-title mb-5">Mis Servicios</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="service-card">
+                        <i class="fab fa-html5 service-icon text-html"></i>
+                        <h5>Páginas Web</h5>
+                        <p class="text-muted mb-4">Diseño y desarrollo de sitios web modernos, responsivos y optimizados para SEO.</p>
+                        <img src="https://www.doowebs.es/wp-content/uploads/2024/04/tendencias-diseno-modo-oscuro.jpg" alt="Páginas Web" loading="lazy">
+                    </div>
                 </div>
-            </div>
-            <div class="col-md-4">
-                <div class="service-card">
-                    <i class="fab fa-css3-alt service-icon text-css"></i>
-                    <h5>Invitaciones</h5>
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyLlcVZvrAN0HGgxh9WNruGNHoHevMAdl8_g&s" alt="Invitaciones">
+                <div class="col-md-4">
+                    <div class="service-card">
+                        <i class="fab fa-css3-alt service-icon text-css"></i>
+                        <h5>Invitaciones Digitales</h5>
+                        <p class="text-muted mb-4">Creación de invitaciones digitales interactivas para eventos especiales.</p>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyLlcVZvrAN0HGgxh9WNruGNHoHevMAdl8_g&s" alt="Invitaciones" loading="lazy">
+                    </div>
                 </div>
-            </div>
-            <div class="col-md-4">
-                <div class="service-card">
-                    <i class="fab fa-js service-icon text-js"></i>
-                    <h5>Menús Digitales</h5>
-                    <img src="https://olaclick.com/wp-content/uploads/2023/10/olaclick-menu-digital.png" alt="Menús Digitales">
+                <div class="col-md-4">
+                    <div class="service-card">
+                        <i class="fab fa-js service-icon text-js"></i>
+                        <h5>Menús Digitales</h5>
+                        <p class="text-muted mb-4">Desarrollo de menús digitales interactivos para restaurantes y cafeterías.</p>
+                        <img src="https://olaclick.com/wp-content/uploads/2023/10/olaclick-menu-digital.png" alt="Menús Digitales" loading="lazy">
+                    </div>
                 </div>
-            </div>
-            <div class="col-md-4">
-                <div class="service-card">
-                    <i class="fab fa-bootstrap service-icon text-bootstrap"></i>
-                    <h5>Portafolios Web</h5>
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJuZO91XM-a9Cm4gQjRA8G6dUricC5Sk2BDA&s" alt="Portafolios Web">
+                <div class="col-md-4">
+                    <div class="service-card">
+                        <i class="fab fa-bootstrap service-icon text-bootstrap"></i>
+                        <h5>Portafolios Web</h5>
+                        <p class="text-muted mb-4">Creación de portafolios profesionales para mostrar tu trabajo y habilidades.</p>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJuZO91XM-a9Cm4gQjRA8G6dUricC5Sk2BDA&s" alt="Portafolios Web" loading="lazy">
+                    </div>
                 </div>
-            </div>
-            <div class="col-md-4">
-                <div class="service-card">
-                    <i class="fab fa-figma service-icon text-figma"></i>
-                    <h5>Tarjetas de Presentación</h5>
-                    <img src="https://sistemadig.com/wp-content/uploads/2024/01/Tarjetas-de-Presentacion-MG-NUEVA-WEB.jpg" alt="Tarjetas de Presentación">
+                <div class="col-md-4">
+                    <div class="service-card">
+                        <i class="fab fa-figma service-icon text-figma"></i>
+                        <h5>Tarjetas de Presentación</h5>
+                        <p class="text-muted mb-4">Diseño de tarjetas de presentación digitales e impresas para profesionales.</p>
+                        <img src="https://sistemadig.com/wp-content/uploads/2024/01/Tarjetas-de-Presentacion-MG-NUEVA-WEB.jpg" alt="Tarjetas de Presentación" loading="lazy">
+                    </div>
                 </div>
-            </div>
-            <div class="col-md-4">
-                <div class="service-card">
-                    <i class="fas fa-shopping-cart service-icon text-git"></i>
-                    <h5>E-commerce</h5>
-                    <img src="https://www.iebschool.com/blog/wp-content/uploads/2021/09/wallopop-1024x484.jpg" alt="E-commerce">
+                <div class="col-md-4">
+                    <div class="service-card">
+                        <i class="fas fa-shopping-cart service-icon text-git"></i>
+                        <h5>E-commerce</h5>
+                        <p class="text-muted mb-4">Desarrollo de tiendas en línea para vender tus productos o servicios.</p>
+                        <img src="https://www.iebschool.com/blog/wp-content/uploads/2021/09/wallopop-1024x484.jpg" alt="E-commerce" loading="lazy">
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
     <!-- Projects Section -->
-    <section id="projects" class="py-5">
+    <section id="projects" class="py-5 bg-light">
         <div class="container">
             <h2 class="text-center position-relative section-title mb-5">Mis Proyectos</h2>
             <div class="row g-4">
                 <div class="col-md-6 col-lg-4">
-                    <div class="card h-100 border-0 shadow-sm">
-                        <img src="https://www.laizquierdadiario.com/IMG/arton195430.jpg?1619609359" class="card-img-top" alt="Proyecto 1">
+                    <div class="card h-100 border-0 shadow-sm project-card">
+                        <img src="https://www.laizquierdadiario.com/IMG/arton195430.jpg?1619609359" class="card-img-top project-img" alt="Héroes del Silencio" loading="lazy">
                         <div class="card-body">
                             <h5 class="card-title">Héroes del Silencio</h5>
                             <p class="card-text text-muted">Una aplicación web responsiva con funcionalidades modernas.</p>
@@ -229,11 +252,11 @@
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4">
-                    <div class="card h-100 border-0 shadow-sm">
-                        <img src="Captura de pantalla 2025-03-20 221511.png" class="card-img-top" alt="Proyecto 2">
+                    <div class="card h-100 border-0 shadow-sm project-card">
+                        <img src="Captura de pantalla 2025-03-20 221511.png" class="card-img-top project-img" alt="A Luxury Hotels" loading="lazy">
                         <div class="card-body">
                             <h5 class="card-title">A Luxury Hotels</h5>
-                            <p class="card-text text-muted">Sitio web de comercio electrónico con carrito de compras.</p>
+                            <p class="card-text text-muted">Sitio web de hotel con sistema de reservas y galería de imágenes.</p>
                             <div class="d-flex flex-wrap gap-2 mb-3">
                                 <span class="badge bg-primary bg-opacity-10 text-primary">HTML</span>
                                 <span class="badge bg-primary bg-opacity-10 text-primary">CSS</span>
@@ -251,12 +274,11 @@
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4">
-                    <div class="card h-100 border-0 shadow-sm">
-                        <img src="https://cdn.aragonmusical.com/wp-content/uploads/2019/05/Bunbury-California-Live.jpg" class="card-img-top" alt="Proyecto 3">
+                    <div class="card h-100 border-0 shadow-sm project-card">
+                        <img src="https://cdn.aragonmusical.com/wp-content/uploads/2019/05/Bunbury-California-Live.jpg" class="card-img-top project-img" alt="BUNBURY" loading="lazy">
                         <div class="card-body">
-                            <h5 class="card-title">BUNBURY
-                                La voz inmortal del rock en español</h5>
-                            <p class="card-text text-muted">Dashboard administrativo con análisis de datos.</p>
+                            <h5 class="card-title">BUNBURY - La voz inmortal del rock</h5>
+                            <p class="card-text text-muted">Sitio web dedicado a la discografía y trayectoria del artista.</p>
                             <div class="d-flex flex-wrap gap-2 mb-3">
                                 <span class="badge bg-primary bg-opacity-10 text-primary">Bootstrap</span>
                                 <span class="badge bg-primary bg-opacity-10 text-primary">JavaScript</span>
@@ -279,7 +301,7 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="py-5 bg-light">
+    <section id="contact" class="py-5">
         <div class="container">
             <h2 class="text-center position-relative section-title mb-5">Contáctame</h2>
             <div class="row justify-content-center">
@@ -293,16 +315,7 @@
                                         <i class="fas fa-envelope mt-1"></i>
                                         <div>
                                             <p class="fw-medium mb-0">Email</p>
-                                            <p class="text-white-50">seguraflorescarlosmanuel24@gmail.com</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="mb-4">
-                                    <div class="d-flex align-items-start gap-3">
-                                        <i class="fas fa-phone mt-1"></i>
-                                        <div>
-                                            <p class="fw-medium mb-0">Teléfono</p>
-                                            <a href="tel:22-26-71-86-55" class="text-white-50"><p class="text-white-50">22-26-71-86-55 </p></a>
+                                            <a href="mailto:seguraflorescarlosmanuel24@gmail.com" class="text-white-50">seguraflorescarlosmanuel24@gmail.com</a>
                                         </div>
                                     </div>
                                 </div>
@@ -313,6 +326,17 @@
                                             <p class="fw-medium mb-0">Ubicación</p>
                                             <p class="text-white-50">Puebla, MEX.</p>
                                         </div>
+                                    </div>
+                                </div>
+                                <div class="mt-5">
+                                    <p class="fw-medium mb-2">Sígueme en:</p>
+                                    <div class="d-flex gap-3">
+                                        <a href="https://github.com/Carlos13segura" class="social-icon-light" aria-label="GitHub">
+                                            <i class="fab fa-github"></i>
+                                        </a>
+                                        <a href="https://www.linkedin.com/in/carlos-segura-118760324/" class="social-icon-light" aria-label="LinkedIn">
+                                            <i class="fab fa-linkedin-in"></i>
+                                        </a>
                                     </div>
                                 </div>
                             </div>
@@ -341,7 +365,7 @@
                                         </div>
                                     </div>
                                 </form>
-                                <p id="responseMessage"></p> <!-- Mensaje de respuesta -->
+                                <p id="responseMessage" class="mt-3"></p> <!-- Mensaje de respuesta -->
                             </div>
                         </div>
                     </div>
@@ -350,6 +374,48 @@
         </div>
     </section>
 
+    <!-- Footer -->
+    <footer class="footer bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <h5 class="fw-bold mb-3">Carlos Segura</h5>
+                    <p class="text-muted">Desarrollador Web especializado en crear experiencias digitales atractivas y funcionales.</p>
+                    <div class="d-flex gap-3 mt-3">
+                        <a href="https://github.com/Carlos13segura" class="social-icon" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/carlos-segura-118760324/" class="social-icon" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="mailto:seguraflorescarlosmanuel24@gmail.com" class="social-icon" aria-label="Email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <h5 class="fw-bold mb-3">Enlaces Rápidos</h5>
+                    <ul class="footer-links">
+                        <li><a href="#about">Sobre Mí</a></li>
+                        <li><a href="#skills">Habilidades</a></li>
+                        <li><a href="#projects">Proyectos</a></li>
+                        <li><a href="#services">Servicios</a></li>
+                        <li><a href="#contact">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4">
+                    <h5 class="fw-bold mb-3">Horario de Contacto</h5>
+                    <p class="text-muted mb-1">Lunes - Viernes: 9:00 AM - 6:00 PM</p>
+                    <p class="text-muted mb-3">Sábados: 10:00 AM - 2:00 PM</p>
+                    <p class="text-muted">¿Tienes un proyecto en mente? ¡Contáctame y hagámoslo realidad!</p>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; <span id="currentYear">2025</span> Carlos Segura. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
     <!-- Scroll to Top Button -->
     <button id="scrollToTop" class="btn btn-primary rounded-circle shadow-lg" aria-label="Scroll to top">
         <i class="fas fa-chevron-up"></i>
@@ -357,34 +423,9 @@
 
     <!-- Bootstrap JS Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- EmailJS -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <!-- Custom JS -->
     <script src="script.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-    <script>
-    (function(){
-        emailjs.init("Y641OwDIqqHyJn4la"); // Reemplaza con tu clave pública de EmailJS
-    })();
-    </script>
-    <script>
-        document.getElementById("contactForm").addEventListener("submit", function (event) {
-            event.preventDefault(); // Evitar el envío tradicional del formulario
-        
-            let formData = {
-                name: document.getElementById("name").value,
-                email: document.getElementById("email").value,
-                subject: document.getElementById("subject").value,
-                message: document.getElementById("message").value
-            };
-        
-            emailjs.send("service_x6otkmt", "template_aai16kk", formData)
-            .then(function(response) {
-                document.getElementById("responseMessage").innerText = "Mensaje enviado correctamente.";
-            }, function(error) {
-                document.getElementById("responseMessage").innerText = "Error al enviar el mensaje.";
-            });
-        });
-        </script>
-        
-
 </body>
 </html>
